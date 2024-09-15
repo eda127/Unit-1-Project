@@ -41,7 +41,7 @@ public class Main{
         int newNum = input.nextInt();
         input.nextLine();
         
-        // Testing to see if the words printed correctly
+        // Testing to see if the words printed correctly (delete after story is done)
         System.out.println("Here are your words: ");
         System.out.println(lastName);
         System.out.println(adjAnimals);
