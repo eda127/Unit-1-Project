@@ -1,3 +1,5 @@
+//Name: Eclipse and Eduardo                Title: Unit 1 Project                    Date: 9/13/24
+
 import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
@@ -5,56 +7,66 @@ public class Main{
         Scanner input = new Scanner(System.in);
         
         // Asking questions for the Mad Lib
+        System.out.print("Choose the weather: ");
+        String weather  = input.nextLine();
+        
         System.out.print("Input a last name: ");
         String lastName = input.nextLine();
         
-        System.out.println("Input an adjective: ");
-        String adjAnimals = input.nextLine();
-        
         System.out.println("Input any random number: ");
-        int num = input.nextInt();
+        int randNum = input.nextInt();
         // Need this after anything that isn't a input.NextLine(); or else it skips the next scanner
         // They explain why here: https://www.freecodecamp.org/news/java-scanner-nextline-call-gets-skipped-solved/
         input.nextLine();
         
-        System.out.println("Input a zoo animal: ");
-        String animal = input.nextLine();
+        System.out.println("Input a zoo animal (make plural): ");
+        String animals = input.nextLine();
         
-        System.out.println("Choose one: True or False? ");
-        boolean isTigers = input.nextBoolean(); 
-        input.nextLine();
-
-        System.out.println("Input a bird species: ");
-        String bird = input.nextLine();
-        
-        System.out.println("Input any random number with a deciamal point: ");
-        double birdChildren = input.nextDouble();
-        input.nextLine();
-        
-        System.out.println("Input another zoo animal: ");
-        String newAnimal = input.nextLine();
-        
-        System.out.println("Input a verb (NOT ending in -ing or -ed): ");
-        String verb = input.nextLine();
+        System.out.println("Input a verb (make it end with -ed: ");
+        String verbEndinginEd = input.nextLine();
         
         System.out.println("Input any random number: ");
-        int newNum = input.nextInt();
+        int age = input.nextInt();
+        input.nextLine();
+        
+        System.out.println("Input any random number: ");
+        int time = input.nextInt();
+        input.nextLine();
+        
+        System.out.println("Input an adjective: ");
+        String adjTeacher = input.nextLine();
+        
+        System.out.println("Choose one: True or False? ");
+        boolean questions = input.nextBoolean(); 
+        input.nextLine();
+        
+        System.out.println("Enter a decimal ");
+        double years = input.nextDouble();
+        input.nextLine();
+        
+        System.out.println("Enter an occupation: ");
+        String occupation = input.nextLine();
+        
+        System.out.println("Input a name: ");
+        String name = input.nextLine();
+        
+        System.out.println("Choose one: True or False? ");
+        boolean fact = input.nextBoolean(); 
         input.nextLine();
         
         // story
-        System.out.println("\n'Ok kids,' said Mrs. " + lastName + " 'We're at the zoo today to learn about these " + adjAnimals + " animals.'");
-        System.out.println("'Let's do a headcount first. I see there are " + num + " kids here. Alright, let's go in now!'");
-        System.out.println("Mrs. " + lastName + "- 'Which animals do we want to see first?'");
-        System.out.println("Child- 'Let's see the " + animal + " first!");
-        System.out.println("Mrs. " + lastName + "- 'I don’t care. We are at the tigers. I’m going to say this fact out and you are going to determine if it’s real or not. \nAre there more tiger in the U.S. in captivity then there are in the wild?'");
-        System.out.println("Child- '" + isTigers + "'");
-        System.out.println("Mrs. " + lastName + "- That fact was true. We are going to the bird sanctuary now.");
-        System.out.println("Mrs. " + lastName + "- The " + bird + " has " + birdChildren + " amount of children on average each year.'");
-        System.out.println("Child- 'Can we see the " + newAnimal + " now? I've been waiting all day to see them!'");
-        System.out.println("Mrs. " + lastName + "- 'I don't know, the " + newAnimal + "'s habitat is kinda... unsafe. They " + verb + " everywhere, all the time. The zookeepers don't even go there anymore since it's so risky for them. But we'll go see it anyway.'");
-        System.out.println("    As the group enters the " + newAnimal + " habitat, they see people running in terror the opposite direction.");
-        System.out.println("Mrs. " + lastName + "- 'Here is the " + newAnimal + ". I did say that the... OH GOD, THEY ESCAPED! RUN!'");
-        System.out.println("    The group runs back to the zoo's entrance.");
-        System.out.println("Mrs. " + lastName + "- 'Hold on everyone, stop! Even though the " + newAnimal + " is chasing us, we need another headcount! Interesting, now there are " + newNum + " kids now. IT DOESN’T MATTER, WE DON’T HAVE TIME! RUN!");
+        System.out.println("\nIt was a " + weather + " day when Ms. " + lastName + " decided to take her kids out to the zoo.");
+        System.out.println("She had promised them that they would visit at least " + randNum + " exhibits today, and if they couldn’t, they would do it later.");
+        System.out.println("The kids wanted to visit the " + animals + " first so they " + verbEndinginEd + " to the exhibit. ");
+        System.out.println("There they saw a zoo keeper who looked around to be around " + age + ". The zoo keeper told her that the animals were having their feeding time so they had to wait " + time + " minutes.");
+        System.out.println("It was no matter, she had all the time in the world to wait, the kids however didn't. ");
+        System.out.println("Being a " + adjTeacher + " teacher, Ms. " +  lastName + " asked the kids true and false questions to pass the time and of course as par first-grader behavior, they’d mostly said " + questions + " to these statements.");
+        System.out.println("She found joy in telling them they were wrong.");
+        System.out.println("Once the animals were let out, she let the kids fawn over them.");
+        System.out.println("To the remaining ones who still wanted to play her little game, she let the zoo keeper tell them cool facts, laying back to enjoy the scenery.");
+        System.out.println("After all they only lived for " + years + " years, she could wait until they were ripe enough to eat. ");
+        System.out.println("She was so happy she found this job after her last job as an " + occupation + " where they fired her after " + name + " disappeared.");
+        System.out.println("It wasn't even " + fact + " either!");
+        
     }
 }
